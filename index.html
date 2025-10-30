@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamTam Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <!-- Боковая панель с контактами -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Чаты</h2>
+                <button class="new-chat-btn">+</button>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Поиск..." class="search-input">
+            </div>
+            <div class="contacts-list">
+                <div class="contact active">
+                    <div class="contact-avatar">👤</div>
+                    <div class="contact-info">
+                        <div class="contact-name">Общий чат</div>
+                        <div class="last-message">Добро пожаловать!</div>
+                    </div>
+                    <div class="time">12:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основная область чата -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <div class="chat-partner-info">
+                    <div class="partner-avatar">👥</div>
+                    <div class="partner-details">
+                        <div class="partner-name">Общий чат</div>
+                        <div class="partner-status">онлайн</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="message bot-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <div class="message-text">Добро пожаловать в чат!</div>
+                        <div class="message-time">12:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Введите сообщение..." id="messageInput">
+                    <button id="sendButton">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
